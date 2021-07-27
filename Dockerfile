@@ -1,4 +1,4 @@
-# Dockerfile for sample service using embedded tomcat server
+# Dockerfile for sample service using embedded tomcat server.
 
 FROM centos:centos7
 MAINTAINER Takumi.Osawa
