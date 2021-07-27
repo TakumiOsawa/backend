@@ -16,7 +16,7 @@ ENV GRADLE_HOME /opt/gradle/gradle-7.1
 ENV PATH ${GRADLE_HOME}/bin:${PATH}
 RUN git clone https://github.com/TakumiOsawa/backend.git /var/local/sample-aws-ecs/backend
 WORKDIR /var/local/sample-aws-ecs/backend
-RUN gradle bootJar -PjavaVersion=1.8 -Dorg.gradle.java.home=$JAVA_HOME --stacktrace
+RUN gradle bootJar -PjavaVersion=1.8 -Dorg.gradle.java.home=$JAVA_HOME
 
 RUN cp /etc/localtime /etc/localtime.org
 RUN ln -sf  /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
